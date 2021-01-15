@@ -1,0 +1,32 @@
+.notfound {
+    margin-top: -50px;
+    width: 100%;
+    text-align: center;
+}
+
+.notfound h2 {
+    position: relative;
+    font-size: 150px;
+    z-index: 2;
+    color: #565353;
+}
+
+.notfound img {
+    position: relative;
+    top: -100px;
+    z-index: 1;
+}
+
+.notfound p {
+    position: relative;
+    top: -200px;
+    z-index: 2;
+}
+
+.notfound a {
+    position: relative;
+    top: -200px;
+    z-index: 2;
+    text-decoration: underline;
+    font-size: 20px;
+}

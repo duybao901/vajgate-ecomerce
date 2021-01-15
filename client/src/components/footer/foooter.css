@@ -1,0 +1,127 @@
+.footer {
+    padding: 70px 0 0px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 100px;
+    overflow-x: hidden;
+}
+
+.footer .container {
+    max-width: 1300px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top div {
+    width: 25%;
+}
+
+.footer-top h3 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.footer-top ul li {
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: .05em;
+    color: #dadada;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.footer-about button {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    transition: all .2s linear;
+}
+
+.footer-about button:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.footer-tags {
+    width: 25%;
+}
+
+.footer-tags ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-tags ul li {
+    margin: 10px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    transition: all ease-in .1s;
+}
+
+.footer-tags ul li:hover {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+
+.footer-channel li a {
+    color: inherit;
+}
+
+li.footer-hve p {
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+li.footer-hve p::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    background-color: #fff;
+    transition: all .15s linear;
+}
+
+li.footer-hve p:hover::after {
+    width: 100%;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.footer-team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-team li.footer-hve p {
+    margin: 0 20px 0 0px;
+}
+
+/* .footer .container .row .col-sm-12{
+    margin-bottom: 20px;
+} */

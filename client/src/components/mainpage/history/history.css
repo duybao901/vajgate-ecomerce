@@ -1,0 +1,29 @@
+.history-header {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.history-length {
+    font-weight: 600;
+    margin: 0 2px;
+}
+
+.detail-history-cart {
+    margin-top: 50px;
+}
+
+.detail-history-cart-img {
+    width: 100px;
+    object-fit: cover;
+}
+
+.detail-history-cart table th {
+    text-align: center;
+}
+
+.detail-history-cart table td {
+    text-align: center;
+    vertical-align: middle;
+}

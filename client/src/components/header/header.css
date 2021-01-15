@@ -1,0 +1,263 @@
+/* #0113ff */
+
+.header {
+    background-color: #FFFFFC;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    width: 100%;
+    transition: all .1s ease-in-out;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+}
+
+.header.sticky {
+    padding: 20px 25px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, .2);
+}
+
+.header .logo {
+    text-align: center;
+    font-size: 32px;
+    color: #0113ff !important;
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-weight: 700;
+    font-family: 'Ubuntu' sans-serif;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.header .logo:hover {
+    text-decoration: none;
+}
+
+.header .nav {
+    display: flex;
+}
+
+.header .nav li {
+    padding: 0 20px;
+}
+
+.nav-link {
+    color: black !important;
+    transition: all .15s linear;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    user-select: none;
+}
+
+.nav-link--active {
+    color: #0113ff !important;
+}
+
+.nav-link:hover {
+    color: #0113ff !important;
+}
+
+.header .header-right .menu {
+    display: none;
+}
+
+.header .header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    margin-right: 50px;
+    height: 100%;
+}
+
+.header .header-right>div {
+    margin: 0 20px;
+    display: flex;
+}
+
+.header .header-right div img {
+    width: 20px;
+}
+
+.header .header-right .cart {
+    position: relative;
+}
+
+.header .header-right .cart:hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 46px;
+    background-color: transparent;
+    bottom: -40px;
+    left: -80px;
+    z-index: 1;
+}
+
+.header .header-right .cart:hover .cart-notify {
+    display: block;
+}
+
+.header .header-right .cart span.nb {
+    top: -5px;
+    right: -10px;
+    text-align: center;
+    line-height: 15px;
+    width: 15px;
+    height: 15px;
+    background-color: #0113ff;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+}
+
+.header .header-right .menu {
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+}
+
+.profile-box {
+    position: relative;
+}
+
+.profile {
+    position: relative;
+    cursor: pointer;
+    height: 36px;
+    width: 100px;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    transition: all .1s linear;
+}
+
+.profile:hover {
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .2);
+}
+
+.profile.active {
+    background: rgba(0, 0, 0, .03);
+}
+
+.profile i {
+    transition: all .1s linear;
+    margin-top: -5px;
+}
+
+.profile-name {
+    user-select: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.profile-image {
+    width: 35px !important;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50px;
+    user-select: none;
+    display: block;
+    margin: 10px auto 20px;
+}
+
+.profile-child {
+    position: absolute;
+    display: none;
+    transition: all .2s linear;
+    animation: toHide .2s linear forwards;
+}
+
+.profile.active+.profile-child {
+    display: block;
+    position: absolute;
+    width: 180px;
+    height: 200px;
+    border-radius: 3px;
+    bottom: -210px;
+    left: -5px;
+    animation: toShow .2s linear forwards;
+    box-shadow: rgba(6, 22, 33, 0.2) 0px 2px 6px;
+    padding: 10px 20px;
+    z-index: 100;
+    background-color: white;
+    text-align: center;
+}
+
+@keyframes toShow {
+    0% {
+        opacity: 0;
+        bottom: -220px;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.profile.active i {
+    transform: rotate(180deg);
+}
+
+.profile-indicator {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.nav-menu {
+    display: block;
+}
+
+.rp-btn-addtocart {
+    display: none;
+}
+
+.rp-menu-child-close {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.rp-menu-child {
+    background-color: #f1f1f1;
+    display: block;
+    height: 100vh;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 50px;
+    transition: all .2s linear;
+    background: #f1f1f1;
+}
+
+.rp-menu-child.active {
+    right: 0;
+    /* animation: toLeft .2s linear forwards; */
+}
+
+@keyframes toLeft {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        right: 0;
+    }
+}

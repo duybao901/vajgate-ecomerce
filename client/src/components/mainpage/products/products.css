@@ -1,0 +1,71 @@
+.products-loading {
+    position: relative;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+}
+
+.select-all {
+    margin-left: auto;
+    text-transform: uppercase;
+}
+
+.select-all label {
+    margin-right: 10px;
+}
+
+.select-all input {
+    width: 25px;
+    height: 25px;
+}
+
+.delete-all-button {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.load-more {
+    width: 150px;
+    height: 30px;
+    padding: 5px 10px;
+    margin: 40px auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-primary);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.load-more i {
+    margin-left: 5px;
+    margin-top: -5px;
+    color:#000;
+}
+
+.loading-products {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin: 200px auto;
+    animation: showUp 1s linear forwards;
+}
+
+@keyframes showUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

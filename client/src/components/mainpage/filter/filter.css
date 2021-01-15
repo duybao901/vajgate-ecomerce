@@ -1,0 +1,106 @@
+.filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-top: 50px;
+}
+
+.filter-left ul {
+    display: flex;
+}
+
+.filter-left ul li {
+    margin-right: 40px;
+    cursor: pointer;
+    color: #7b7b7b;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.filter-left ul li.active {
+    color: var(--color-primary);
+}
+
+.filter-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-input::-webkit-input-placeholder {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.filter-input {
+    margin-right: 40px;
+    padding: 3px 10px;
+    width: 200px;
+}
+
+.filter-lable {
+    position: relative;
+    cursor: pointer;
+    color: #7b7b7b;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.filter-lable:hover .filter-sort {
+    opacity: 1;
+    visibility: visible;
+}
+
+.filter-lable:hover::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    background-color: transparent;
+    bottom: -50px;
+    left: -50px;
+    z-index: 999;
+}
+
+.filter-lable i {
+    font-size: 16px;
+    margin-left: 8px;
+    color: #000;
+}
+
+.filter-sort {
+    position: absolute;
+    z-index: 999;
+    top: 50px;
+    left: calc(-250px + 70px);
+    width: 250px;
+    padding: 30px 30px 50px;
+    background-color: #212121;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .15s linear;
+}
+
+.filter-sort h3 {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.filter-sort ul li {
+    transition: all .15s ease-in-out;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.filter-sort ul li.active {
+    color: #fff;
+}
+
+.filter-sort ul li:hover {
+    color: #fff;
+}
