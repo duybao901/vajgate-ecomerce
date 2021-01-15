@@ -78,18 +78,18 @@ export default function Products() {
         setIsChecked(false);
     };
     
-    if (products.length === 0) {
-        var styleProducts = {
-            marginBottom: '1000px',
-        };
-    }
+    // if (products.length === 0) {
+    //     var styleProducts = {
+    //         marginBottom: '1000px',
+    //     };
+    // }
 
     if (loading) {
         return <div className="loading-products"> loading...</div>;
     } else {
         return (
             <React.Fragment>
-                <div className="container" style={styleProducts}>
+                <div className="container" >
                     {isAdmin && (
                         <div className="select-all">
                             <label htmlFor="selectAll">Select All</label>
