@@ -77,7 +77,7 @@ function Filter() {
                     >
                         All
                     </li>
-                    {categories && categories.map((category) => {
+                    {categories !== null ? categories.map((category) => {
                         return (
                             <li
                                 className="filter-category"
@@ -88,7 +88,7 @@ function Filter() {
                                 {category.name}
                             </li>
                         );
-                    })}
+                    }) : ''}
                 </ul>
             </div>
             <div className="filter-right">
