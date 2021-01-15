@@ -17,20 +17,16 @@ app.use(
 );
 
 // connect mongoDB
-const MONGODB_URL = process.env.MONGODB_URL;
-mongoose.connect(
-    MONGODB_URL,
-    {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useFindAndModify: false,
-        useCreateIndex: true,
-    },
-    (err) => {
-        if (err) throw err;
-        console.log('Connect mongodb successfully 🚀');
-    },
-);
+const URI = process.env.MONGODB_URL
+mongoose.connect(URI, {
+    useCreateIndex: true,
+    useFindAndModify: false,
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}, err => {
+    if (err) throw err;
+    console.log('Connected to MongoDB')
+})
 
 // Build
 if (process.env.NODE_ENV === 'production') {
