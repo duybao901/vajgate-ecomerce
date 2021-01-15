@@ -17,7 +17,7 @@ app.use(
 );
 
 // connect mongoDB
-const URI = process.env.MONGODB_URL || 'mongodb+srv://duyape:poppipo@cluster0.hzv1h.mongodb.net/javcommerce?retryWrites=true&w=majority'
+const URI = process.env.MONGODB_URL 
 mongoose.connect(URI, {
     useCreateIndex: true,
     useFindAndModify: false,
