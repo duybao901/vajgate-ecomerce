@@ -77,7 +77,7 @@ function Filter() {
                     >
                         All
                     </li>
-                    {categories.map((category) => {
+                    {categories && categories.map((category) => {
                         return (
                             <li
                                 className="filter-category"
