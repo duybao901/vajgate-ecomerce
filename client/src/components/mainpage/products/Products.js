@@ -77,7 +77,7 @@ export default function Products() {
         });
         setIsChecked(false);
     };
-
+    
     if (products.length === 0) {
         var styleProducts = {
             marginBottom: '1000px',

@@ -17,9 +17,9 @@ app.use(
 );
 
 // connect mongoDB
-const urlDB = process.env.urlDB;
+const MONGODB_URL = process.env.MONGODB_URL;
 mongoose.connect(
-    urlDB,
+    MONGODB_URL,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
