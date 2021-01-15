@@ -17,7 +17,7 @@ app.use(
 );
 
 // connect mongoDB
-const URI = process.env.MONGODB_URI || process.env.MONGODB_URL
+const URI = process.env.MONGODB_URL
 mongoose.connect(URI, {
     useCreateIndex: true,
     useFindAndModify: false,
