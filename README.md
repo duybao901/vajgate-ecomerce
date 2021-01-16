@@ -1,6 +1,8 @@
-## VAJGATE
+# VAJGATE
+## DEMO
+https://jconmmerce.herokuapp.com/
 
-Author: Bao Duy
+## Author: Bao Duy
 
 Install dependencies for server
 
