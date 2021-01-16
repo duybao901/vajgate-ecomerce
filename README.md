@@ -5,7 +5,7 @@ Author: Bao Duy
 
 Install dependencies for server
 
-npm install
+#npm install
 Install dependencies for client
 cd client ---> npm install
 Connect to your mongodb and add info in .env
