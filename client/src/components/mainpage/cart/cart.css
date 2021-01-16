@@ -1,0 +1,261 @@
+.cart-banner {
+    width: 100%;
+    height: 120px;
+    background-color: #fafafa;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    color: #948b8b;
+}
+
+.cart-banner-f {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.cart-banner div span {
+    color: #8c8a8a;
+}
+
+.cart-banner .cart-banner-home {
+    font-size: 16px;
+    color: #4f4f4f !important;
+}
+
+.cart-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.cart-container h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.cart-body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.cart-content {
+    width: 65%;
+}
+
+.cart-table {
+    width: 100%;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.cart-item img {
+    height: 132px;
+    width: 90px;
+    object-fit: cover;
+    margin: 0 20px 0 15px;
+}
+
+.cart-checkout {
+    width: 30%;
+    background-color: #fafafa;
+}
+
+.cart-remove {
+    width: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.cart-remove:hover {
+    color: var(--color-primary);
+}
+
+.cart-name {
+    padding: 22px 0;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 20px;
+    width: 250px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.cart-price {
+    font-size: 16px;
+    font-weight: 400;
+    width: 100px;
+    color: #7b7b7b;
+}
+
+.cart-quantity-label {
+    margin-right: 25px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-size: 500;
+}
+
+.cart-quantitys {
+    width: 300px;
+    text-align: center;
+}
+
+.cart-quantity-number {
+    margin: 0 12px;
+}
+
+.cart-quantity-ct {
+    background-color: transparent;
+    outline: none;
+    padding: 0px 6px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.cart-quantity-ct:hover {
+    border: 1px solid #000;
+}
+
+.cart-quantity-ct:focus {
+    outline: none;
+}
+
+.cart-price-t {
+    font-weight: 700;
+    font-size: 17px;
+    color: #565555;
+}
+
+.cart-to-home {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 22px;
+    color: #7b7b7b;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.cart-checkout {
+    padding: 45px 35px;
+}
+
+.cart-checkout h2 {
+    font-weight: 700;
+    position: relative;
+    display: block;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+.cart-subtotal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cart-subtotal-label {
+    font-weight: 700;
+    padding-right: 30px;
+    border: 0;
+    font-size: 14px;
+    color: #080808;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cart-subtotal-number {
+    font-size: 14px;
+}
+
+.cart-shipping {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.cart-shipping-label {
+    font-weight: 700;
+    padding-right: 30px;
+    border: 0;
+    font-size: 14px;
+    color: #080808;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cart-shipping p {
+    width: 100%;
+}
+
+.cart-total {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 1px solid #e1e1e1;
+    justify-content: space-between;
+}
+
+.cart-total-label {
+    text-transform: uppercase;
+    padding-right: 30px;
+    border: 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #080808;
+    font-weight: 700;
+}
+
+.cart-total-number {
+    text-transform: uppercase;
+    border: 0;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #080808;
+    font-weight: 700;
+}
+
+.cart-payment-btn {
+    display: block;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: #fff;
+    background-color: var(--color-primary);
+}
+
+.cart-payment-btn:hover {
+    background-color: var(--color-primary-light);
+    color: #fff;
+}
+
+.cart-empty {
+    width: 1200px;
+    margin: 30px auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.paypal-button {
+    max-height: 100px !important;
+}

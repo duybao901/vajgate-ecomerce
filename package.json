@@ -1,0 +1,39 @@
+{
+    "name": "ecommerce",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server.js",
+        "server": "nodemon server.js",
+        "client": "cd client && npm run start",
+        "server-install": "npm install",
+        "client-install": "cd client && npm install",
+        "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "heroku-postbuild": "cd client && npm install && npm run build",
+        "beautiful": "prettier --single-quote --tab-width 4 --trailing-comma all --arrow-parens always --write **/*.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@material-ui/core": "^4.11.1",
+        "bcrypt": "^5.0.0",
+        "cloudinary": "^1.23.0",
+        "concurrently": "^5.3.0",
+        "cookie-parser": "^1.4.5",
+        "cors": "^2.8.5",
+        "dayjs": "^1.9.6",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-fileupload": "^1.2.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.10.16"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.6",
+        "prettier": "^2.2.0"
+    }
+}

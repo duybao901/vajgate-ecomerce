@@ -1,0 +1,307 @@
+.prouduct_cart {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 600px;
+    margin: 20px 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.prouduct_cart:hover img.product-img {
+    filter: grayscale(0);
+}
+
+.prouduct_cart img.product-img {
+    height: 520px;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(80%);
+    transition: all .2s ease-in-out;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+}
+
+.prouduct_cart-checkbox:checked {
+    background-color: var(--color-primary) !important;
+}
+
+.product-name {
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: black;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: .15em;
+    font-weight: 400;
+}
+
+.product-name:hover {
+    text-decoration: none;
+    color: #0113ff;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+}
+
+.price {
+    margin-top: 5px;
+    color: #999;
+    font-size: 16px;
+    font-family: "Oxygen" sans-serif;
+    transition-delay: .2s;
+}
+
+.btn-addtocart {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    opacity: 0;
+    transform: translateX(-50%);
+    color: #999;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    font-size: 14px;
+}
+
+.btn-addtocart:hover {
+    text-decoration: none;
+    color: #0113ff;
+}
+
+.prouduct_cart:hover .content .price {
+    opacity: 0;
+}
+
+.prouduct_cart:hover .content .btn-addtocart {
+    opacity: 1;
+    left: 50%;
+}
+
+.prouduct_cart:hover .quick-look div {
+    opacity: 1;
+    top: 2px;
+}
+
+.quick-look {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    z-index: 990;
+}
+
+.quick-look:focus {
+    outline: none;
+}
+
+.quick-look div {
+    position: relative;
+    left: 0;
+    top: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #0113ff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 4px 14px;
+    transition: all .2s ease-in-out;
+    opacity: 0;
+}
+
+.modal.modal-show {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.modal.modal-show .modal-content {
+    animation: toTop .4s .1s ease-in-out forwards;
+}
+
+@keyframes toTop {
+    0% {
+        opacity: 0;
+        top: 100px;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.modal-content {
+    opacity: 0;
+    position: relative;
+    width: 70% !important;
+    height: 70% !important;
+    background-color: #f1f1f1;
+    border: none;
+    box-shadow: .5px .5px 5px rgba(0, 0, 0, .1);
+    transition: all .3s ease-in-out;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.modal-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.modal-detail img.modal-img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: unset;
+}
+
+.modal-info {
+    height: 100%;
+    width: 50%;
+    padding: 20px 50px;
+}
+
+.modal-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.modal-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #0113ff;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.modal-info ul li span {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin: 10px 0;
+}
+
+.modal-btn-addtocart {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 240px;
+    height: 60px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    background-color: #0113ff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.modal-btn-addtocart:hover {
+    background-color: rgb(35, 35, 35);
+}
+
+.btn-sharebox {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-sharebox i {
+    margin: 0 8px;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+
+.btn-sharebox i:hover {
+    color: #0113ff;
+}
+
+.btn-close-modal {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.btn-close-modal:hover {
+    opacity: 0.8;
+}
+
+.prouduct_cart-checkbox {
+    position: absolute;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+}
+
+.product_admin-btn {
+    position: relative;
+    top: -30px;
+    display: flex;
+}
+
+.product_admin-btn div {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+.product_admin-delete {
+    margin-right: 20px;
+}
+
+.prouduct_cart-new {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 300;
+}
