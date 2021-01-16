@@ -1,4 +1,4 @@
-### VAJGATE
+## VAJGATE
 
 Author: Bao Duy
 
