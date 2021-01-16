@@ -7,6 +7,15 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
+
+
+app.use('/user', require('./routers/users.route'));
+app.use('/api', require('./routers/category.route'));
+app.use('/api', require('./routers/upload'));
+app.use('/api', require('./routers/products.route'));
+app.use('/api', require('./routers/payments.route'));
+
+
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(cookieParser());
@@ -44,9 +53,3 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log('Server is running on port', PORT)
 })
-
-app.use('/user', require('./routers/users.route'));
-app.use('/api', require('./routers/category.route'));
-app.use('/api', require('./routers/upload'));
-app.use('/api', require('./routers/products.route'));
-app.use('/api', require('./routers/payments.route'));
