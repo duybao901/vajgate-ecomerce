@@ -2,6 +2,9 @@
 ## DEMO
 https://jconmmerce.herokuapp.com/
 
+## NOTE
+If you want to use project, please download in main branch
+
 ## Author: Bao Duy
 
 Install dependencies for server
