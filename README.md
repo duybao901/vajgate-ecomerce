@@ -3,7 +3,7 @@
 https://jconmmerce.herokuapp.com/
 
 ## NOTE
-If you want to use project, please download in main branch
+If you want to use project, please download in main branche
 
 ## Author: Bao Duy
 
